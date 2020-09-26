@@ -1,15 +1,17 @@
 import React from 'react';
 
 import Map from '../Map';
+import SideBar from '../SideBar';
 
-import './App.css';
+import './App.scss';
 
-function App() {
+const App = () => {
   return (
     <div className="app">
+      <SideBar />
       <Map />
     </div>
   );
-}
+};
 
 export default App;

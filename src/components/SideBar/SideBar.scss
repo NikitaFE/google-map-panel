@@ -1,0 +1,29 @@
+@import '../../assets/styles/constants.scss';
+
+.side-bar {
+  position: relative;
+  z-index: 100;
+  width: 400px;
+
+  background-color: $white;
+  box-shadow: 0 -3px 10px 5px $black30;
+
+  transition: margin 0.3s ease-in-out;
+
+  &--closed {
+    margin-left: -400px;
+  }
+}
+
+.side-bar__button {
+  position: absolute;
+  top: 140px;
+  right: -35px;
+  width: 35px;
+  height: 35px;
+
+  background-color: $white;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid $black;
+  border-left: none;
+}
