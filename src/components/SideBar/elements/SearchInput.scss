@@ -4,10 +4,12 @@
   position: static;
   top: 0;
   left: 0;
+  margin-bottom: -55px;
   padding: 10px;
 }
 
 .search__container {
+  background-color: $white;
   border-radius: 5px;
   box-shadow: 0 2px 5px 2px $black30;
 }
@@ -28,6 +30,7 @@
   &:last-of-type {
     .search__label {
       width: 180px;
+      left: -60px;
     }
   }
 
@@ -46,12 +49,21 @@
   }
 
   &:not(:first-of-type) {
-    color: $gray;
+    .search__button-icon {
+      fill: $gray;
+    }
 
     &:hover {
-      color: $blue;
+      .search__button-icon {
+        fill: $blue;
+      }
     }
   }
+}
+
+.search__button-icon {
+  width: 15px;
+  height: 15px;
 }
 
 .search__label {
@@ -75,8 +87,14 @@
 .search__input-field {
   flex-grow: 1;
 
+  color: $gray;
+
   border: none;
   outline: none;
+
+  &:focus {
+    color: $black;
+  }
 }
 
 .search__select {
@@ -105,4 +123,10 @@
     width: 20px;
     height: 20px;
   }
+}
+
+.search__select-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: $black;
 }

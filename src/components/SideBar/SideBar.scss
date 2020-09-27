@@ -9,10 +9,15 @@
   box-shadow: 0 -3px 10px 5px $black30;
 
   transition: margin 0.3s ease-in-out;
-
+  
   &--closed {
     margin-left: -400px;
   }
+}
+
+.side-bar__container {
+  overflow: auto;
+  overflow-x: hidden
 }
 
 .side-bar__button {
@@ -24,6 +29,22 @@
 
   background-color: $white;
   border-radius: 0 5px 5px 0;
-  border: 1px solid $black;
-  border-left: none;
+  border: none;
+  box-shadow: 0 -3px 10px 5px $black30;
+
+  &:hover {
+    .side-bar__button-icon {
+      fill: $gray;
+    }
+  }
+}
+
+.side-bar__button-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.side-bar__header {
+  height: 250px;
+  background-image: url('../../assets/img/image.jpg');
 }

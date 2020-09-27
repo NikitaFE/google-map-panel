@@ -1,0 +1,52 @@
+@import '../../../assets/styles/constants.scss';
+
+.main-info {
+  padding: 10px;
+  padding-bottom: 15px;
+}
+
+.main-info__title {
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.main-info__subtitle {
+  color: $gray;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.rating {
+  margin-bottom: 2px;
+
+  font-size: 14px;
+  color: $gray;
+}
+
+.rating__value {
+  margin-right: 8px;
+}
+
+.rating__stars {
+  margin-right: 8px;
+}
+
+.rating__icon {
+  width: 15px;
+  height: 15px;
+}
+
+.rating__total {
+  a {
+    color: $gray;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
