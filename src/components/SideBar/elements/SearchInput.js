@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 
-import { ReactComponent as Geo } from '../../../assets/img/geo.svg';
-import { ReactComponent as Menu } from '../../../assets/img/menu.svg';
-import { ReactComponent as Search } from '../../../assets/img/search.svg';
-import { ReactComponent as Cancel } from '../../../assets/img/cancel.svg';
+import { Geo, Menu, Search, Cancel } from '../../Icons/icons';
 import './SearchInput.scss';
 
 const SearchInput = () => {
@@ -30,7 +27,10 @@ const SearchInput = () => {
             <Search className="search__button-icon" />
             <div className="search__label">Поиск</div>
           </button>
-          <button className="button search__button">
+          <button
+            className="button search__button"
+            onClick={() => setSearchValue('')}
+          >
             <Cancel className="search__button-icon" />
             <div className="search__label">Удалить результаты поиска</div>
           </button>

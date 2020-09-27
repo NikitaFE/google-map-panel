@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 
 import SearchInput from './elements/SearchInput';
 import MainInfo from './elements/MainInfo';
+import ToolsPanel from './elements/ToolsPanel';
 
-import { ReactComponent as LeftArrow } from '../../assets/img/left-arrow.svg';
-import { ReactComponent as RightArrow } from '../../assets/img/right-arrow.svg';
+import { LeftArrow, RightArrow } from '../Icons/icons';
 import './SideBar.scss';
 
 const SideBar = () => {
@@ -25,6 +25,7 @@ const SideBar = () => {
           <SearchInput />
         </div>
         <MainInfo />
+        <ToolsPanel />
       </div>
     </div>
   );
