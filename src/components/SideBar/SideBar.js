@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import SearchInput from './elements/SearchInput';
 import MainInfo from './elements/MainInfo';
 import ToolsPanel from './elements/ToolsPanel';
+import Warning from './elements/Warning';
 
 import { LeftArrow, RightArrow } from '../Icons/icons';
 import './SideBar.scss';
@@ -26,6 +27,7 @@ const SideBar = () => {
         </div>
         <MainInfo />
         <ToolsPanel />
+        <Warning />
       </div>
     </div>
   );

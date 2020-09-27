@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 
-import { ReactComponent as Track } from '../../../assets/img/track.svg';
-import { ReactComponent as Bookmark } from '../../../assets/img/bookmark.svg';
-import { ReactComponent as LookFor } from '../../../assets/img/look-for.svg';
-import { ReactComponent as ToPhone } from '../../../assets/img/to-phone.svg';
-import { ReactComponent as Share } from '../../../assets/img/share.svg';
+import { Track, Bookmark, LookFor, ToPhone, Share } from '../../Icons/icons';
 import './ToolsPanel.scss';
 
 const toolsData = [

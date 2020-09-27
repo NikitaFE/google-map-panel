@@ -1,9 +1,7 @@
 import React from 'react';
 
-import { ReactComponent as Star } from '../../../assets/img/star.svg';
-import { ReactComponent as HalfStar } from '../../../assets/img/half-star.svg';
+import { Star, HalfStar } from '../../Icons/icons';
 import './MainInfo.scss';
-
 
 const MainInfo = () => {
   return (
