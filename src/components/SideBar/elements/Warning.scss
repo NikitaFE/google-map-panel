@@ -1,0 +1,30 @@
+@import '../../../assets/styles/constants.scss';
+
+.warning {
+  padding: 15px 20px;
+}
+
+.warning__container {
+  display: block;
+  padding: 10px 15px;
+  padding-right: 50px;
+
+  font-size: 14px;
+  color: $black;
+
+  background-color: $white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 2px $black30;
+}
+
+.warning__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+}
+
+.warning__text {
+  margin: 0;
+  margin-bottom: 5px;
+}
