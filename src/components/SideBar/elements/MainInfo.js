@@ -1,6 +1,7 @@
 import React from 'react';
+import StarRatings from 'react-star-ratings';
 
-import { Star, HalfStar } from '../../Icons/icons';
+// import { Star, HalfStar } from '../../Icons/icons';
 import './MainInfo.scss';
 
 const MainInfo = ({ pointOfInterest }) => {
@@ -10,11 +11,13 @@ const MainInfo = ({ pointOfInterest }) => {
       <div className="main-info__rating rating">
         <span className="rating__value">{pointOfInterest.averageRating}</span>
         <span className="rating__stars">
-          <Star className="rating__icon" />
-          <Star className="rating__icon" />
-          <Star className="rating__icon" />
-          <Star className="rating__icon" />
-          <HalfStar className="rating__icon" />
+          <StarRatings 
+            rating={pointOfInterest.averageRating}
+            starRatedColor="#ffc107"
+            numberOfStars={5}
+            starDimension="14px"
+            starSpacing="2px"
+          />
         </span>
         <span className="rating__total">(<a href="https://github.com/NikitaFE">{pointOfInterest.totalVotes}</a>)</span>
       </div>
