@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import classNames from 'classnames';
 
 import { Track, Bookmark, LookFor, ToPhone, Share } from '../../Icons/icons';
 import './ToolsPanel.scss';
@@ -26,7 +27,7 @@ const ToolsPanel = () => {
     <div className="tools-panel underline">
       <ul className="tools-panel__list">
         {data.map(({ id, active, Icon, title }) => (
-          <li className={`tools-panel__item${active ? ' tools-panel__item--active' : ''}`} key={id}>
+          <li className={classNames('tools-panel__item', {' tools-panel__item--active': active})} key={id}>
             <a
               href="https://github.com/NikitaFE"
               className="tools-panel__link"

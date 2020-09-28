@@ -3,12 +3,12 @@ import React from 'react';
 import { Star, HalfStar } from '../../Icons/icons';
 import './MainInfo.scss';
 
-const MainInfo = () => {
+const MainInfo = ({ pointOfInterest }) => {
   return (
     <div className="main-info underline">
-      <h1 className="main-info__title">Воронежский областной краеведческий музей</h1>
+      <h1 className="main-info__title">{pointOfInterest.title}</h1>
       <div className="main-info__rating rating">
-        <span className="rating__value">4,6</span>
+        <span className="rating__value">{pointOfInterest.averageRating}</span>
         <span className="rating__stars">
           <Star className="rating__icon" />
           <Star className="rating__icon" />
@@ -16,9 +16,9 @@ const MainInfo = () => {
           <Star className="rating__icon" />
           <HalfStar className="rating__icon" />
         </span>
-        <span className="rating__total">(<a href="https://github.com/NikitaFE">397</a>)</span>
+        <span className="rating__total">(<a href="https://github.com/NikitaFE">{pointOfInterest.totalVotes}</a>)</span>
       </div>
-      <a href="https://github.com/NikitaFE" className="main-info__subtitle">Краеведческий музей</a>
+      <a href="https://github.com/NikitaFE" className="main-info__subtitle">{pointOfInterest.type}</a>
     </div>
   )
 };

@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import classNames from 'classnames';
 
 import { Geo, Menu, Search, Cancel } from '../../Icons/icons';
 import './SearchInput.scss';
 
-const SearchInput = () => {
+const SearchInput = ({ coords }) => {
   const [isSelectVisible, setSelectVisible] = useState(false);
-  const [searchValue, setSearchValue] = useState(`51°52'47.7"N 48°18'29.3"E`);
+  const [searchValue, setSearchValue] = useState(coords);
 
   return (
     <div className="side-bar__search search">
@@ -35,7 +36,7 @@ const SearchInput = () => {
             <div className="search__label">Удалить результаты поиска</div>
           </button>
         </div>
-        <div className={`search__select${isSelectVisible ? '' : ' search__select--hidden'}`}>
+        <div className={classNames('search__select', {' search__select--hidden': !isSelectVisible})}>
           <a className="search__select-link" href="https://github.com/NikitaFE">
             <span className="search__select-icon">
               <Geo className="icon" alt="geo" />
